@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@500&family=Space+Grotesk:wght@500&display=swap');
+@import url('https://fonts.cdnfonts.com/css/spartan');
+
+header {
+  height: 85px;
+  width: 100%;
+  color: white;
+  border-bottom: 1px solid #393950;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  div {
+    height: 100%;
+    width: calc(100% - 32px * 2);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    span {
+      font-family: 'Antonio', sans-serif;
+      font-size: 28px;
+      font-weight: 500;
+      letter-spacing: -1.05px;
+    }
+
+    svg {
+      visibility: hidden;
+    }
+
+    nav {
+      height: 100%;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      ul {
+        margin: 0;
+        padding: 0;
+
+        width: 665px;
+        height: 100%;
+        list-style: none;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        li {
+          height: 100%;
+
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          box-sizing: border-box;
+          border: 4px rgba(0, 0, 0, 0) solid;
+
+          a {
+            font-size: 11px;
+            font-family: Spartan, sans-serif;
+            font-weight: 700;
+            white-space: nowrap;
+            text-decoration: none;
+            color: #c1c1c8;
+            letter-spacing: 1px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1439px) {
+  header {
+    height: 160px;
+
+    div {
+      $nav-width: 665px;
+
+      width: $nav-width;
+      height: 100px;
+
+      flex-direction: column;
+
+      nav {
+        width: $nav-width;
+
+        ul {
+          width: $nav-width;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  header {
+    height: 69px;
+
+    div {
+      width: calc(100% - 24px * 2);
+      height: 36px;
+
+      flex-direction: row;
+
+      svg {
+        visibility: visible;
+      }
+
+      nav {
+        width: 0px;
+        display: none;
+      }
+    }
+  }
+}

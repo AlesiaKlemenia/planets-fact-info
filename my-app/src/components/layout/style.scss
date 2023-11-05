@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@500&family=Space+Grotesk:wght@500&display=swap');
+@import url('https://fonts.cdnfonts.com/css/spartan');
+
+$antonio: 'Antonio', sans-serif;
+$spartan: 'Spartan', sans-serif;
+
+$gray-color: #838392;
+$dark-gray-color: #393950;
+
+main {
+  margin: 0;
+  padding: 0;
+
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper {
+  width: 1110px;
+  height: 843px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.planet-about {
+  width: 100%;
+  height: 715px;
+
+  color: white;
+
+  display: flex;
+
+  .planet-image {
+    width: 715px;
+    height: 715px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .info-container {
+    width: 350px;
+    margin: 87px 0;
+  }
+
+  .planet-name {
+    margin: 0;
+
+    font-family: $antonio;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+
+  .planet-info {
+    margin: 23px 0 24px 0;
+
+    font-family: $spartan;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+
+    display: block;
+  }
+
+  .planet-source {
+    margin-top: 24px;
+
+    font-family: $spartan;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+
+    color: $gray-color;
+
+    a {
+      font-weight: 700;
+      text-decoration-line: underline;
+      color: $gray-color;
+    }
+
+    svg {
+      margin-left: 8px;
+    }
+  }
+}
+
+aside {
+  margin-top: 39px;
+
+  width: 350px;
+  height: 176px;
+
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  .aside-button {
+    width: 100%;
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+
+    .aside-button-number {
+      margin: 0 28px;
+
+      font-family: $spartan;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 700;
+      letter-spacing: 2.57px;
+
+      color: rgba(255, 255, 255, 0.5);
+    }
+
+    .aside-button-text {
+      font-family: $spartan;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 700;
+      letter-spacing: 2.571px;
+
+      color: white;
+    }
+  }
+
+  .aside-button:hover {
+    border: 1px solid $dark-gray-color;
+    background-color: $dark-gray-color;
+  }
+}
+
+.planet-statistics {
+  width: 100%;
+  height: 128px;
+
+  color: white;
+
+  display: flex;
+  justify-content: space-evenly;
+  gap: 30px;
+
+  div {
+    padding: 20px 0 0 23px;
+    border: 1px solid $dark-gray-color;
+
+    width: 255px;
+
+    display: flex;
+    flex-direction: column;
+
+    .statistics-title {
+      font-family: $spartan;
+      font-size: 11px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 25px;
+      letter-spacing: 1px;
+
+      color: $gray-color;
+    }
+
+    .statistics-value {
+      margin-top: 4px;
+
+      font-family: $antonio;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: -1.5px;
+    }
+  }
+}
+
+@media screen and (max-width: 1439px) {
+  main {
+    height: 865px;
+  }
+
+  .wrapper {
+    width: 689px;
+    height: 100%;
+  }
+
+  .planet-about {
+    width: 100%;
+    height: 714px;
+    margin-bottom: 27px;
+
+    flex-direction: column;
+
+    .planet-image {
+      width: 422px;
+      height: 422px;
+
+      align-self: center;
+      justify-self: center;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    .info-container {
+      width: 100%;
+      margin-top: 37px;
+
+      display: flex;
+    }
+
+    .planet-info-container {
+      width: 339px;
+      height: 253px;
+      margin-right: 69px;
+    }
+
+    .planet-name {
+      margin: 0;
+
+      font-size: 48px;
+    }
+
+    .planet-info {
+      margin: 24px 0 32px 0;
+
+      font-size: 11px;
+      line-height: 22px;
+    }
+
+    .planet-source {
+      font-size: 12px;
+      margin-top: 0;
+
+      svg {
+        margin-left: 4px;
+      }
+    }
+  }
+
+  aside {
+    margin: 0;
+
+    width: 281px;
+    height: 152px;
+
+    .aside-button {
+      height: 40px;
+
+      .aside-button-number {
+        margin: 0 20px;
+
+        font-size: 9px;
+        letter-spacing: 1.929px;
+      }
+
+      .aside-button-text {
+        font-size: 9px;
+        letter-spacing: 1.929px;
+      }
+    }
+
+    .aside-button:hover {
+      border: 1px solid $dark-gray-color;
+      background-color: $dark-gray-color;
+    }
+  }
+
+  .planet-statistics {
+    height: 88px;
+
+    color: white;
+
+    gap: 11px;
+
+    div {
+      padding: 16px 0 0 15px;
+
+      width: 164px;
+
+      .statistics-title {
+        font-size: 8px;
+        line-height: 16px;
+        letter-spacing: 0.727px;
+      }
+
+      .statistics-value {
+        margin-top: 6px;
+
+        font-size: 24px;
+        letter-spacing: -0.9px;
+      }
+    }
+  }
+}
